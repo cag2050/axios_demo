@@ -2,6 +2,6 @@ import Vue from 'vue'
 
 export default {
     postRequest () {
-        return Vue.$axios.get('')
+        return Vue.$axios.post('')
     }
 }

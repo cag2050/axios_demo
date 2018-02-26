@@ -9,8 +9,6 @@ import {sync} from 'vuex-router-sync'
 
 import axios from 'axios'
 Vue.prototype.$axios = axios
-console.log(axios)
-console.log(Vue.prototype)
 
 sync(store, router)
 

@@ -4,6 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import store from './store'
+import {sync} from 'vuex-router-sync'
+
+import axios from 'axios'
+Vue.prototype.$axios = axios
+console.log(axios)
+console.log(Vue.prototype)
+
+sync(store, router)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
